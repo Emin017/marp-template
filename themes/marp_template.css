@@ -1,0 +1,262 @@
+/* @theme marp_template */
+
+@charset "UTF-8";
+@import 'default';
+/* @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css'); */
+/* tailwind.config = { corePlugins: { preflight: false } } */
+
+:root {
+  --font-family-main: 'Noto', 'Noto Sans SC';
+  --font-family-title: 'Noto', 'Noto Sans SC', ;
+  --font-family-footer: 'Noto';
+  --font-family-code: 'JetBrains Mono';
+  --font-size-1: 45px;
+  --foot-size-subtitle: 42px;
+  --font-size-2-3: 38px;
+  --font-size-4-5: 30px;
+  --font-size-main: 25px;
+  --font-size-footer: 22px;
+  --font-size-page: 12px;
+  --font-size-code: 22px;
+}
+
+section {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  color: var(--color-main);
+  text-align: justify;
+}
+
+h1 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-1);
+  /* color: var(--color-title);    */
+}
+
+
+h2,
+h3 {
+  font-family: var(--font-family-title);
+  /* font-size: var(--font-size-2-3); */
+  /* color: var(--color-much); */
+}
+
+h4,
+h5 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-4-5);
+  /* color: var(--color-much); */
+}
+
+.toc h1 {
+  text-align: left;
+  font-family: "LXGW WenKai";
+  /* font-size: var(--font-size-1); */
+  font-size: 90px;
+  /* color: var(--color-title);    */
+}
+
+.toc_a section {
+  text-align: left;
+}
+
+header {
+  top: 12px;
+}
+
+ol {
+  line-height: 1.4rem;
+  padding-left: 35px;
+}
+
+ol li::marker {
+  color: var(--color-much);
+}
+
+ul {
+  line-height: 1.4rem;
+  padding-left: 35px;
+}
+
+a {
+  font-size: 0.9rem;
+  padding: 0 .2rem;
+  color: var(--color-main);
+  font-family: var(--font-family-main);
+}
+
+a:hover {
+  color: var(--color-much);
+  text-decoration: underline;
+}
+
+a::after {
+  font-size: 0.6em;
+  padding-left: 0.5%;
+  content: "\f148";
+  /* f148 f0c1 f08e f14c f0c6 */
+  font-family: "FontAwesome";
+  color: var(--color-much);
+}
+
+
+section::after {
+  font-family: "FontAwesome";
+  font-size: var(--font-size-page);
+  margin-right: -10px;
+  margin-bottom: -14px;
+  content: attr(data-marpit-pagination) "\f101 " attr(data-marpit-pagination-total);
+  letter-spacing: 3px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-footer);
+  color: var(--color-footer);
+}
+
+footer {
+  color: var(--color-footer);
+  bottom: 1%;
+  left: 2%;
+  width: 100%;
+  height: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer>em {
+  font-family: var(--font-family-footer);
+  font-size: var(--font-size-footer);
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+footer::after {
+  content: "";
+}
+
+.MathJax {
+  font-size: 0.95rem;
+}
+
+h2 .MathJax,
+h3 .MathJax,
+h4 .MathJax,
+h3 .MathJax {
+  font-size: 1.5rem;
+}
+
+h4 .MathJax,
+h5 .MathJax {
+  font-size: 1.2rem;
+}
+
+pre {
+  text-align: left;
+  border: 0.3px solid var(--color-few);
+  border-radius: 10px;
+  padding: 28px;
+  line-height: 120%;
+  overflow: auto;
+  font-size: var(--font-size-footer);
+  font-size: 1rem;
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #f6f8fa;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-few);
+}
+
+code {
+  padding: 2px;
+  border-radius: 1px;
+  /* background-color: var(--color-code-bg); */
+  font-family: var(--font-family-code);
+  font-size: 0.8rem;
+  letter-spacing: -1px;
+}
+
+strong {
+  font-size: 1.03rem;
+  font-weight: bolder;
+  color: var(--color-much);
+}
+
+em {
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+img {
+  max-width: 95%;
+  border-radius: 8px;
+  margin: auto;
+}
+
+img[alt*='#l'] {
+  float: left;
+}
+
+img[alt*='#r'] {
+  float: right;
+}
+
+img[alt*='#c'] {
+  display: block;
+  margin: auto;
+}
+
+
+section.cover_a {
+  width: 100%;
+  text-align: center;
+}
+
+section.cover_a h1 {
+  vertical-align: middle;
+}
+
+section.cover_a h6 {
+  font-family: var(--font-family-title);
+  font-size: var(--foot-size-subtitle);
+  color: var(--color-title);
+  padding: 0px 80px;
+}
+
+section.cover_a p {
+  justify-content: center;
+  align-items: center;
+}
+
+section.cover_a strong {
+  color: var(--color-main);
+}
+
+section.cover_a a::after {
+  content: "";
+}

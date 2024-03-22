@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+    "./themes/lut.css",
+    "./themes/marp_template.css"
+    ]
+}

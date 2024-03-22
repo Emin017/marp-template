@@ -1,0 +1,18 @@
+/* @theme lut */
+
+@import 'marp_template';
+
+:root {
+  --color-code-bg: #ecf3f5;
+  --color-coverbg: #cad7e3c5;
+  --color-few: #000000;
+  --color-footer: #8c8c8c;
+  --color-main: #041d22;
+  /* --color-much: #f82121; */
+  /* --color-quote: rgba(254, 176, 98, 0.1); */
+  /* --color-title: rgb(255, 255, 255); */
+  /* --color-trans: #d7e3e7; */
+  --filter-b: brightness(30%) contrast(70%) grayscale(100%);
+  --filter-c: brightness(0%) contrast(60%) grayscale(80%);
+  --filter-e: brightness(0%) contrast(70%) grayscale(100%);
+}
