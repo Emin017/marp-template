@@ -6,7 +6,7 @@ author: Emin
 header: ''
 footer: '这是footer'
 
-backgroundImage: url('lut.png')
+backgroundImage: url('img/lut.png')
 backgroundSize: 20%
 backgroundPosition: top 2% right 2%
 style: |
@@ -17,7 +17,7 @@ style: |
 
 <!--_backgroundImage: NULL -->
 <!--_footer: '' -->
-![img](lut.png)
+![img](img/lut.png)
 <!-- _class: cover_a -->
 # 标题
 
